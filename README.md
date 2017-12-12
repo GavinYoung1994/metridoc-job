@@ -6,16 +6,16 @@ holds the job api and all jobs, see the [wiki](https://github.com/metridoc/metri
 Installation
 ------------
 
-### Requirements
+#### Requirements
 
 * Java 7
 
-### Recommended
+#### Recommended
 
 * nix system
 * MySQL database
 
-### Installing MetriDoc Command Line Tool
+#### Installing MetriDoc Command Line Tool
 
 In your bash-enabled terminal, type the following command:
 
@@ -61,4 +61,27 @@ environments {
     }
   }  
 }
+```
+
+Usage
+-----
+
+In order to run a job anywhere from your terminal on your machine, go into that job's directory first and then type the following command:
+
+```bash
+mdoc install .
+```
+
+Then, in the future, when you want to run this job, you can type in your terminal:
+
+```bash
+mdoc <jobname> [parameters...]
+```
+
+The following is an example of installing the **metridoc-job-gate** plugin and running a metridoc-job-gate command that requires a single filename as its parameter:
+
+```bash
+cd metridoc-job-gate
+mdoc install .
+mdoc gate April_gates_2017.csv
 ```
