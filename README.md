@@ -8,12 +8,12 @@ Installation
 
 ### Requirements
 
-⋅⋅* Java 7
+* Java 7
 
 ### Recommended
 
-..* nix system
-..* MySQL database
+* nix system
+* MySQL database
 
 ### Installing MetriDoc Command Line Tool
 
