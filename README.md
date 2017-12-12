@@ -38,7 +38,7 @@ To make sure mdoc is working simply type **mdoc** on the command line. You shoul
 Connecting to your database
 ---------------------------
 
-Frequently a metridoc job will connect to a database. Normally the connection params will come from **~/.metridoc/MetridocConfig.groovy**. The format for configuring a data source follows the grails [conventions](http://docs.grails.org/latest/guide/conf.html#dataSource). Below is an example of the content of a MetridocCondif file:
+Frequently a metridoc job will connect to a database. Normally the connection params will come from **~/.metridoc/MetridocConfig.groovy**. The format for configuring a data source follows the grails [conventions](http://docs.grails.org/latest/guide/conf.html#dataSource). Below is an example of the content of a MetridocConfig file:
 
 ```Groovy
 environments {
