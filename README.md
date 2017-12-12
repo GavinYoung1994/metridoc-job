@@ -85,3 +85,14 @@ cd metridoc-job-gate
 mdoc install .
 mdoc gate April_gates_2017.csv
 ```
+
+Creating a new metridoc-job
+---------------------------
+
+To create a new metridoc-job, type the following command in your terminal (change the "job name" field to the name of your job):
+
+```bash
+git clone -bmetridoc-job-template https://github.com/metridoc/metridoc-job.git && \
+    (cd metridoc-job && git remote rm origin) && \
+    mv metridoc-job <job name>
+```
